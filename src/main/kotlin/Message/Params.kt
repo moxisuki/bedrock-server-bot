@@ -16,5 +16,7 @@ data class Params(
     val srcname: String,
     val srctype: String,
     val mode: String,
-    val raw: String
+    val raw: String,
+    val id: String,
+    val result: String
 )

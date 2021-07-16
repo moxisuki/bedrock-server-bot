@@ -15,21 +15,26 @@ object ServerClient {
     private val out = Output()
     private val gson = Gson()
     suspend fun onReceive(data:String) {
-        out.pushMessageToGroup("back\n$data")
         when (JsonParser.parseString(data).asJsonObject.get("cause").asString) {
             "chat" -> onMemberMessage(gson.fromJson(data, ChatData::class.java))
             "join" -> onMemberJoin(gson.fromJson(data,JoinData::class.java))
             "left" -> onMemberLeave(gson.fromJson(data, LeftData::class.java))
             "cmd" -> onMemberCmd(gson.fromJson(data, CmdData::class.java))
             "mobdie" -> onMobDie(gson.fromJson(data, MobData::class.java))
-          //  is CmdResp -> onCmdResp(pkg)
+            "runcmdfeedback" -> onCmdResp(gson.fromJson(data, ResultData::class.java))
           //  is ServerCrash -> onServerCrash(pkg)
         }
     }
 
+    private suspend fun onCmdResp(fromJson: ResultData) {
+        var id = fromJson.params.id
+        var result = fromJson.params.result
+        data_w.mutableMap.put(id,result)
+    }
+
     private suspend fun onMobDie(fromJson: MobData) {
         if (fromJson.params.mobtype.equals(fromJson.params.mobname)) {
-            val tmp = "玩家「${fromJson.params.mobname}」被\n-> /${fromJson.params.srcname}"
+            val tmp = "玩家「${fromJson.params.mobname}」被\n◆「${fromJson.params.srctype}」杀死"
             out.pushMessageToGroup(tmp)
         }
     }
