@@ -1,0 +1,6 @@
+grantedPermissionMap: 
+  '*:*': 
+    - console
+    - u3601594248
+  'com.minimalist.micat.bedrock-server-bot:*': 
+    - u3601594248

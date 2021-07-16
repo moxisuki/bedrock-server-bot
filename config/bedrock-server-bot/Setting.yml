@@ -1,0 +1,9 @@
+host: 127.0.0.1
+port: 12099
+path: '/websocket'
+password: password
+re_try_times: 5
+bots: 
+  - 672998107
+groups: 
+  - 712106197
