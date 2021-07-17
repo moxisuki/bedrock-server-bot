@@ -2,7 +2,11 @@ package com.minimalist.micat
 
 import com.minimalist.micat.Api.ServerClient
 import com.minimalist.micat.Api.WebsocketClient
+import com.minimalist.micat.Config.PlayerData
 import com.minimalist.micat.Config.Setting
+import com.minimalist.micat.Fun.Admin_Fun
+import com.minimalist.micat.Fun.WhiteList
+import com.minimalist.micat.Fun.XboxID
 import com.minimalist.micat.Util.Output
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
@@ -38,13 +42,17 @@ object BedrockServerBot : KotlinPlugin(
             launchWebsocket()
         }
         Setting.reload()
+        PlayerData.reload()
         Websocket = WebsocketClient()
-        CommandManager.INSTANCE.registerCommand(BedrockSimpleCommand,true)
+        CommandManager.registerCommand(BedrockSimpleCommand,true)
 
-        val e = GlobalEventChannel.subscribeAlways<GroupMessageEvent> {
+       GlobalEventChannel.subscribeAlways<GroupMessageEvent> {
             // this: GroupMessageEvent
             // event: GroupMessageEvent
-            CommandManager.INSTANCE.executeCommand(this.toCommandSender(),this.message,false)
+           WhiteList(this).registered()
+           XboxID(this).registered()
+           Admin_Fun(this).registered()
+            CommandManager.executeCommand(this.toCommandSender(),this.message,false)
         }
 
 
@@ -55,18 +63,18 @@ object BedrockServerBot : KotlinPlugin(
 
     internal suspend fun launchWebsocket() {
         if(Setting.re_try_times == retrytimes){
-            out.pushMessageToGroup("正在尝试连接到服务器\n->${Setting.host}:${Setting.port}")
+            out.pushMessageToAdminGroup("正在尝试连接到服务器\n->${Setting.host}:${Setting.port}")
             logger.info("Try to connect ${Setting.host}:${Setting.port}")
             Websocket.connect()
             retrytimes--
         }
         else if (retrytimes > 0) {
             retrytimes--
-            out.pushMessageToGroup("正在尝试第${Setting.re_try_times-retrytimes}次连接服务器")
+            out.pushMessageToAdminGroup("正在尝试第${Setting.re_try_times-retrytimes}次连接服务器")
             logger.info("Try to connect ${Setting.host}:${Setting.port} [${Setting.re_try_times-retrytimes}]")
             Websocket.connect()
         } else {
-            out.pushMessageToGroup("服务器连接失败\n->${Setting.host}:${Setting.port}\n->Pwd:${Setting.password}\n->Path:${Setting.path}")
+            out.pushMessageToAdminGroup("服务器连接失败\n->${Setting.host}:${Setting.port}\n->Pwd:${Setting.password}\n->Path:${Setting.path}")
         }
     }
 }

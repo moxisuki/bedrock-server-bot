@@ -22,5 +22,9 @@ object Setting : ReadOnlyPluginConfig("Setting") {
 
     val admin_Groups by value(listOf<Long>(123456789))
 
+    val chat_group by value(listOf<Long>(120265502))
+
+    val prefix by value(">")
+
     val groups by value(listOf<Long>(12345678))
 }

@@ -85,13 +85,13 @@ class WebsocketClient() {
 
     suspend fun sendResultCmd(cmd: String): String {
         val id = data_w.getCmdSize().toString()
-        var params = Params(cmd = cmd, id)
-        var sendcmd = SendCmd("runcmdrequest", params, "pack")
-        var json = Gson().toJson(sendcmd)
-        var callJson = GetData().send(json)
+        val params = Params(cmd = cmd, id)
+        val sendcmd = SendCmd("runcmdrequest", params, "pack")
+        val json = Gson().toJson(sendcmd)
+        val callJson = GetData().send(json)
         data_w.outgoing.send(Frame.Text(callJson))
         Thread.sleep(2000)
-        var data = data_w.mutableMap.get(id).toString()
+        val data = data_w.mutableMap.get(id).toString()
         if (data.isEmpty()){
             out.pushMessageToAdminGroup("错误！指令执行结果获取超时\n->cmd:$cmd\n->id:$id")
             return "fail"

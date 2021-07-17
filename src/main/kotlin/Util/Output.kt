@@ -14,6 +14,12 @@ class Output {
            }
        }
     }
+    suspend fun pushMessageToChat(msg:String) {
+        if (msg.isEmpty()) return
+        Setting.bots.forEach {
+            Bot.getInstance(it).pushGroupMessage(msg, Setting.chat_group)
+        }
+    }
     suspend fun pushMessageToGroup(msg:String){
         if(msg.isEmpty()) return
         Setting.bots.forEach {

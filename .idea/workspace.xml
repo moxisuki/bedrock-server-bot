@@ -4,28 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65620fce-5e03-45c3-a3b5-c8b7a60ba959" name="Changes" comment="upload">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Message/ResultData.kt" afterDir="false" />
+    <list default="true" id="65620fce-5e03-45c3-a3b5-c8b7a60ba959" name="Changes" comment="Fix bug and update">
+      <change afterPath="$PROJECT_DIR$/bots/672998107/logs/2021-07-17.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Config/PlayerData.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Fun/Admin_Fun.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Fun/WhiteList.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Fun/XboxID.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Message/BlackCheck.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Util/MessageUtil.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/faces/Fail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/faces/Good_job.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/faces/Question.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/faces/Star.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/Message/Params.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/Message/Params.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Api/Params.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Api/Params.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Api/SendCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Api/SendCmd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Api/ServerClient$notifyClose$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Api/ServerClient$notifyClose$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Api/ServerClient$notifyDrop$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Api/ServerClient$notifyDrop$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Api/ServerClient$onReceive$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Api/ServerClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Api/ServerClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Api/WebsocketClient$client$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Api/WebsocketClient$client$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Api/WebsocketClient$connect$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Api/WebsocketClient$connect$2$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Api/WebsocketClient$connect$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Api/WebsocketClient$connect$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Api/WebsocketClient$process$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Api/WebsocketClient$process$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Api/WebsocketClient$sendCmd$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Api/WebsocketClient$sendCmd$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Api/WebsocketClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Api/WebsocketClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/BedrockServerBot$launchWebsocket$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/BedrockServerBot$launchWebsocket$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/BedrockServerBot$onEnable$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/BedrockServerBot$onEnable$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/BedrockServerBot$onEnable$e$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/BedrockServerBot.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/BedrockServerBot.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/BedrockSimpleCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/BedrockSimpleCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Util/GetData$Params.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Util/GetData$Params.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Util/GetData$SendData.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Util/GetData$SendData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Util/GetData.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Util/GetData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Config/Setting.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Config/Setting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Util/Output$pushMessageToAdminGroup$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Util/Output$pushMessageToAdminGroup$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Util/Output$pushMessageToGroup$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Util/Output$pushMessageToGroup$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Util/Output.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/minimalist/micat/Util/Output.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/bedrockserverbot10SNAPSHOTjar-classes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/bedrockserverbot10SNAPSHOTjar-classes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/build-history.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
@@ -52,6 +68,13 @@
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i.len" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" afterDir="false" />
@@ -67,9 +90,17 @@
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream" afterDir="false" />
@@ -95,11 +126,12 @@
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/build-history.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/last-build.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/bedrock-server-bot-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/bedrock-server-bot-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bedrock-server-bot/Setting.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/bedrock-server-bot/Setting.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Api/ServerClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Api/ServerClient.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Api/WebsocketClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Api/WebsocketClient.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BedrockSimpleCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/BedrockSimpleCommand.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Message/Params.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Message/Params.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Util/GetData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Util/GetData.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BedrockServerBot.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/BedrockServerBot.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Config/Setting.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Config/Setting.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Util/Output.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Util/Output.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,9 +178,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Object" />
-        <option value="Class" />
         <option value="Kotlin Class" />
         <option value="Kotlin Data Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -173,23 +205,31 @@
     <setting file="file://$PROJECT_DIR$/build.gradle.kts" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1vIIT6Gzu4NBiWlWl5jtWGJpNs5" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="ml.local.models.training.notification.expired" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\36015\IdeaProjects\bedrock-server-bot\src\main\resources\faces" />
+    </key>
   </component>
   <component name="RunManager" selected="Kotlin.RunTerminalKt">
     <configuration name="bedrock-server-bot [buildPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -249,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626411811314</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fix bug and update">
+      <created>1626443310762</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1626443310762</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -265,11 +312,13 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="upload" />
+    <MESSAGE value="Fix bug and update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix bug and update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -3,7 +3,13 @@ port: 12099
 path: '/websocket'
 password: password
 re_try_times: 5
+wait_time: 6
 bots: 
   - 672998107
-groups: 
+admin_Groups: 
   - 712106197
+chat_group: 
+  - 712106197
+prefix: '>'
+groups: 
+  - 933321987

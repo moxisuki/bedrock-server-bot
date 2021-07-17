@@ -35,7 +35,7 @@ object ServerClient {
     private suspend fun onMobDie(fromJson: MobData) {
         if (fromJson.params.mobtype.equals(fromJson.params.mobname)) {
             val tmp = "玩家「${fromJson.params.mobname}」被\n◆「${fromJson.params.srctype}」杀死"
-            out.pushMessageToGroup(tmp)
+            out.pushMessageToChat(tmp)
         }
     }
 
@@ -43,7 +43,7 @@ object ServerClient {
 
     private suspend fun onMemberCmd(fromJson: CmdData) {
         val tmp = "玩家「${fromJson.params.sender}」执行\n-> /${fromJson.params.cmd}"
-        out.pushMessageToGroup(tmp)
+        out.pushMessageToChat(tmp)
     }
 
     private suspend fun onMemberLeave(fromJson: LeftData) {
@@ -56,7 +56,7 @@ object ServerClient {
             3 -> tmp = "由于肝衰竭爬出了服务器"
             4 -> tmp = "莫名其妙地离开了服务器"
         }
-        out.pushMessageToGroup("玩家「${fromJson.params.sender}」\n▼$tmp")
+        out.pushMessageToChat("玩家「${fromJson.params.sender}」\n▼$tmp")
     }
 
     private suspend fun onMemberJoin(fromJson: JoinData) {
@@ -69,29 +69,29 @@ object ServerClient {
             3 -> tmp = "艰难的挤进了服务器"
             4 -> tmp = "不知所措的进入了服务器"
         }
-        out.pushMessageToGroup("玩家「${fromJson.params.sender}」\n▲$tmp")
+        out.pushMessageToChat("玩家「${fromJson.params.sender}」\n▲$tmp")
     }
 
     private suspend fun onMemberMessage(fromJson: ChatData) {
         val tmp = "玩家「${fromJson.params.sender}」说\n-> ${fromJson.params.text}"
-        out.pushMessageToGroup(tmp)
+        out.pushMessageToChat(tmp)
     }
 
     public suspend fun notifyConnect() {
         BedrockServerBot.retrytimes = Setting.re_try_times
-        out.pushMessageToGroup("服务器连接成功")
+        out.pushMessageToAdminGroup("服务器连接成功")
     }
 
 
     public suspend fun notifyDrop() {
-        out.pushMessageToGroup("无法找到服务器")
+        out.pushMessageToAdminGroup("无法找到服务器")
         Thread.sleep((Setting.wait_time*1000).toLong())
         BedrockServerBot.launchWebsocket()
     }
 
     public suspend fun notifyClose() {
             if(Setting.re_try_times == BedrockServerBot.retrytimes) {
-                out.pushMessageToGroup("服务器已关闭连接\n->将于10s后尝试重新连接")
+                out.pushMessageToAdminGroup("服务器已关闭连接\n->将于10s后尝试重新连接")
                 Thread.sleep(10000)
             }
             BedrockServerBot.launchWebsocket()
